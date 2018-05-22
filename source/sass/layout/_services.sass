@@ -6,9 +6,7 @@
   background: $red-brand
   text-align: center
   position: relative
-  height: 500px
-  @media only screen and (max-width: 680px)
-    height: auto
+  height: auto
   &:after
     bottom: 0
     position: absolute
@@ -26,10 +24,19 @@
     margin: 2em 0
     color: whitesmoke
 
+  .second-title
+    margin: 1em 0
+    color: whitesmoke
+    font-weight: 700
+    font-size: 2.5em
+
 .cards
   display: grid
-  grid-template-columns: repeat(3, auto)
+  // grid-template-columns: repeat(3, auto)
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
   grid-gap: 20px
+  flex-wrap: nowrap
+  grid-auto-flow: dense
   @media only screen and (max-width: 680px)
     grid-template-columns: repeat(1, auto)
 
@@ -60,8 +67,29 @@
       font-family: $rajdhani
       font-weight: 700
       text-transform: uppercase
+      &:last-child
+        margin-bottom: 0.5em
 
+// indpendientes
 .price
-  font-size: 1.8em !important
+  font-size: 2em !important
   font-family: $source !important
   font-weight: 400 !important
+
+.rain-x img
+  margin-top: .3em
+  width: 100px
+
+.triple-foam img
+  margin-top: .3em
+  width: 80px
+
+.carte-first
+  margin-top: 0.3em
+
+.tax
+  color: whitesmoke
+  font-family: $rajdhani
+  font-weight: 700
+  font-size: 1.4em
+  margin-top: 1em
