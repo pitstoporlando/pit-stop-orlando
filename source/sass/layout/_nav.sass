@@ -1,22 +1,42 @@
 .main-nav
   display: flex
-  margin-top: 20px
   padding: 0
+  position: fixed
+  z-index: 9999
+  width: 100%
+  padding-top: 1em
+  padding-left: 3em
+  padding-right: 3em
+  background: #fff
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
 
   li
     list-style: none
 
+  .logo
+    font-family: $rajdhani
+    font-size: 24px
+    font-weight: 700
+    display: block
+
   a
-    color: white
+    color: #212121
+    font-size: 18px
     display: block
     border-radius: 4px
-    padding: 10px 40px
+    padding: 10px 15px
     text-decoration: none
-    font-weight: 900
+    font-family: $rajdhani
+    font-weight: 700
+    // letter-spacing: 1px
     text-transform: uppercase
     transition: all 0.2s ease
+    display: flex
+    align-items: center
+    height: 100%
   a:hover, a:active
-    color: $ocean
+    color: $red
   li:first-child
     margin-right: auto
     padding: 10px 0
@@ -24,7 +44,9 @@
       padding: 0
 
 a.download
-  background: white
-  color: $ocean
-  box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
+  background: #333
+  border-radius: 50px
+  color: $red
+  // box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
   margin-left: 25px
+  height: auto

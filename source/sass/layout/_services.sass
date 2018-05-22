@@ -1,5 +1,9 @@
-#features
-  background: #f9f9f9
+#services
+  .wrapper
+    width: 95% !important
+    max-width: none !important
+
+  background: $red-brand
   text-align: center
   position: relative
   height: 500px
@@ -19,27 +23,45 @@
     @media only screen and (max-width: 680px)
       display: none
   h2
-    margin: 80px 0
-
+    margin: 2em 0
+    color: whitesmoke
 
 .cards
   display: grid
   grid-template-columns: repeat(3, auto)
-  grid-gap: 30px
+  grid-gap: 20px
   @media only screen and (max-width: 680px)
     grid-template-columns: repeat(1, auto)
 
 .feature-card
-  background: white
-  padding: 30px 40px 10px 40px
+  background: black
+  color: $silver
+  border-radius: 5px
+  // padding: 30px 40px 10px 40px
   box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
+
+  &-bg
+    background: white
+    color: black
+    width: 100%
 
   h3
     margin: 10px 0 0
+    font-family: $rajdhani
+    font-weight: 700
 
-.car
-  border-top: 4px solid $seafoam
-.shoe
-  border-top: 4px solid $purps
-.device
-  border-top: 4px solid $ocean
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      font-size: 1.5em
+      font-family: $rajdhani
+      font-weight: 700
+      text-transform: uppercase
+
+.price
+  font-size: 1.8em !important
+  font-family: $source !important
+  font-weight: 400 !important

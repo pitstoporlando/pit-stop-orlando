@@ -1,12 +1,11 @@
 //	Headings
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900')
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Rajdhani:400,700')
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
   font-weight: bold
-  font-family: 'Roboto', sans-serif
-  font-weight: 900
+  font-family: $source, sans-serif
+  font-weight: 700
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07)
 
 .gigantic
@@ -18,7 +17,7 @@ h1, h2, h3, h4, h5, h6
   font-size: 68px
   line-height: 1.05
   text-transform: uppercase
-  font-weight: 900
+  font-weight: 700
   @media only screen and (max-width: 680px)
     font-size: 44px
 
@@ -31,7 +30,7 @@ h1, h2, h3, h4, h5, h6
 .bigger, h3
   font-size: 26px
   line-height: 1.38
-  font-weight: 500
+  font-weight: 400
   @media only screen and (max-width: 680px)
     font-size: 22px
 
@@ -47,12 +46,11 @@ h1, h2, h3, h4, h5, h6
 
 
 // Basic Text Style
-
 p
   margin: 0 0 20px 0
   font-weight: 400
   font-size: 16px
-  font-weight: 500
+  font-weight: 400
 
 em
   font-style: italic
@@ -66,3 +64,6 @@ hr
   clear: both
   margin: 10px 0 30px
   height: 0
+
+span
+  color: $red-brand
