@@ -1,26 +1,21 @@
 #contact
   color: white
   text-align: center
-  background: url("../img/heroBackground-black.jpg") no-repeat
+  background: black
   background-size: cover
   background-position: center
   padding: 120px 0
   margin-top: -70px
   @media only screen and (max-width: 680px)
-    margin-top: 75px
-    padding: 60px
+    margin-top: 3em
+    padding: 3em
 
   h2
-    font-size: 3em
-    text-transform: uppercase
+    font-size: 2.5em
+    font-family: $source
+    text-transform: capitalize
     font-weight: 700
     margin: 0
-
-  p
-    width: 100%
-    max-width: 450px
-    margin: 20px auto 40px
-    font-weight: 900
 
   .button
     position: relative
@@ -28,5 +23,115 @@
     margin: 0 15px
     padding: 20px 0
     padding-left: 35px
-    @media only screen and (max-width: 680px)
-      margin: 10px 15px
+    @media only screen and (max-width: 640px)
+      margin: 0.7em 1em
+
+.grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  justify-content: center
+  grid-gap: 10px
+  margin-bottom: 2em
+
+  .cell
+    h4
+      font-family: $rajdhani
+      font-weight: 700
+      text-transform: uppercase
+      font-size: 1.4em
+
+    p
+      font-family: $source
+      margin-bottom: 0.5em
+      font-weight: 400
+      font-size: 1.2em
+
+.map
+  display: flex
+  justify-content: center
+  margin: 0 auto
+  iframe
+    margin: 0 auto
+    width: 60em
+    height: 40em
+    @media only screen and (max-width: 800px)
+      width: 50em
+      height: 30em
+    @media only screen and (max-width: 640px)
+      width: 20em
+      height: 10em
+    // @media only screen and (max-width: 800px)
+      width: 50em
+      height: 30em
+
+// contact form
+.group-1
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  justify-content: center
+  grid-gap: 20px
+
+  input[type="text"]
+    padding: 1em
+    color: $red
+    border: none
+    border-radius: 6px
+    width: 100%
+    &::placeholder
+      color: $red-brand
+      font-family: $rajdhani
+      font-weight: 400
+      font-size: 1.2em
+
+  input[type="email"]
+    padding: 1em
+    color: $red
+    border: none
+    border-radius: 5px
+    width: 100%
+    &::placeholder
+      color: $red-brand
+      font-family: $rajdhani
+      font-weight: 400
+      font-size: 1.2em
+
+.group-2
+  display: grid
+  grid-template-columns: 1fr
+  justify-content: center
+  grid-gap: 20px
+
+  .message
+    grid-column: 1 / -1
+
+  textarea
+    padding: 1em
+    margin: 1em 0
+    color: $red
+    border: none
+    border-radius: 5px
+    width: 100%
+    &::placeholder
+      color: $red-brand
+      font-family: $rajdhani
+      font-weight: 400
+      font-size: 1.2em
+
+.btn-send
+  border: none
+  color: $red-brand
+
+@media screen and (max-width: 680px)
+  .group-1
+    margin-bottom: 1em
+  .group-1 input[type="text"]
+    width: auto
+    min-width: 300px
+    margin: 0.3em 0
+  .group-1 input[type="email"]
+    width: auto
+    min-width: 300px
+    margin: 0.3em 0
+  .group-2 textarea
+    width: auto
+    min-width: 300px

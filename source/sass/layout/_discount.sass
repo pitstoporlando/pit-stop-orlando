@@ -5,11 +5,11 @@
   display: flex
   align-items: center
   justify-content: center
-  @media only screen and (max-width: 680px)
+  @media only screen and (max-width: 768px)
     display: block
 
   img
-    @media only screen and (max-width: 680px)
+    @media only screen and (max-width: 768px)
       width: 100%
       max-width: 250px
       text-align: center
@@ -19,15 +19,29 @@
   .offer
     width: 40%
     margin: 0 auto
-    @media only screen and (max-width: 680px)
+
+    p
+      font-size: 1.4em
+      margin-bottom: 0.5em
+
+    .small
+      font-size: 1.2em
+
+    @media only screen and (max-width: 768px)
       width: 100%
       text-align: center
 
 
   .offer .button
     background: rgb(235, 35, 36)
+    padding: 1.5em 5em
     color: white
-    padding: 20px 80px
-    font-size: 18px
+    font-family: $source
+    font-size: 1.4em
+
+    @media only screen and (max-width: 768px)
+      margin-bottom: 5em
+
   h2
-    margin-bottom: 15px
+    margin-bottom: 0.5em
+    font-size: 3em

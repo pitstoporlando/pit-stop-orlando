@@ -23,5 +23,7 @@
         "gulp-uglify": "^3.0.0",
         "scrollreveal": "^3.3.6"
     },
-    "dependencies": {}
+    "dependencies": {
+        "sweet-scroll": "^3.0.1"
+    }
 }
