@@ -50,3 +50,63 @@ a.download
   // box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
   margin-left: 25px
   height: auto
+
+// Overlay
+.overlay
+  position: fixed
+  display: flex
+  justify-content: center
+  align-items: center
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  visibility: hidden
+  opacity: 0
+  background: black
+  font-size: 2em
+  transition: .5s all ease
+  z-index: 999999
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    cursor: pointer
+
+    li
+      margin: 1em 0
+      cursor: pointer
+
+      a
+        font-family: $source
+        transition: .3s all ease
+        &:hover
+          color: $red-secondary
+
+      .close-menu
+        position: absolute
+        // margin: 1em
+        top: 1em
+        right: 1em
+
+
+  &.active
+    visibility: visible
+    opacity: 1
+
+@media screen and (min-width: 850px)
+  .main-nav
+    .menu-bars
+      display: none
+
+@media screen and (max-width: 850px)
+  .main-nav
+    padding-left: 2em
+    padding-right: 2em
+
+    .link
+      display: none
+
+    .menu-bars
+      font-size: 1.5em
