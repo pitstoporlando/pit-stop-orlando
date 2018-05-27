@@ -37,9 +37,7 @@ gulp.task('sass', function() {
     gulp.src('source/sass/**/*.sass')
     .pipe(sourcemaps.init())
         .pipe(plumber())
-        .pipe(sass({
-            style: 'compressed'
-        }))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(rename({
             basename: 'main',
             suffix: '.min'
