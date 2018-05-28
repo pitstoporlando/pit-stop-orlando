@@ -29,7 +29,7 @@ sr.reveal('.offer h2', {
     easing:'ease',
     scale:'1',
     duration: 1500,
-    origin: 'right',
+    origin: 'bottom',
     distance: '80px'
 }),
 sr.reveal('.offer p', {
@@ -37,7 +37,7 @@ sr.reveal('.offer p', {
     easing:'ease',
     scale:'1',
     duration: 1500,
-    origin: 'right',
+    origin: 'bottom',
     distance: '80px'
 }),
 sr.reveal('#faq p', {
@@ -47,6 +47,13 @@ sr.reveal('#faq p', {
     duration: 2000,
     origin: 'bottom'
 })
+sr.reveal('#faq p', {
+    delay: 500,
+    easing:'ease',
+    scale:'1',
+    duration: 2000,
+    origin: 'bottom'
+}),
 sr.reveal('.cell', {
     delay: 500,
     easing:'ease',
@@ -54,6 +61,7 @@ sr.reveal('.cell', {
     duration: 2000,
     origin: 'bottom'
 });
+
 
 
 // Select all links with hashes

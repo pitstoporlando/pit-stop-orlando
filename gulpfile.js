@@ -46,12 +46,6 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('build/assets/css'));
 });
 
-gulp.task('images', function() {
-    gulp.src('source/img/*')
-        .pipe(images())
-        .pipe(gulp.dest('build/assets/img'));
-});
-
 // Uglify js files
 gulp.task('scripts', function() {
     gulp.src('source/js/*.js')
@@ -94,4 +88,4 @@ gulp.task('watch', function(){
 
 
 // use default task to launch Browsersync and watch JS files
-gulp.task('default', [ 'sass', 'scripts', 'vendors', 'images', 'watch'], function () {});
+gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
