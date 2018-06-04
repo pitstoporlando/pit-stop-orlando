@@ -65,87 +65,65 @@
   </style>
 </head>
 <body>
-  <section id="header">
-    <!-- navbar -->
-    <nav>
-      <ul class="main-nav" itemscope itemtype="http://schema.org/Place">
-        <li><a href="index.html" itemprop="name" class="logo">Pit <span>Stop</span> Orlando</a></li>
-        <li><a class="link" href="about.html">About Us</a></li>
-        <li><a class="link" href="services.html">Services &amp; Pricing</a></li>
-        <li><a class="link" href="services.html#discount">Offers</a></li>
-        <li><a class="link" href="faq.html">FAQ</a></li>
-        <li><a class="link download button" href="index.html#contact">Visit Us</a></li>
-        <li><a class="menu-bars"><i class="fas fa-bars"></i></a></li>
-      </ul>
-    </nav>
-    <div class="overlay">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services &amp; Pricing</a></li>
-        <li><a href="services.html#discount">Offers</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="index.html#contact">Visit Us</a></li>
-        <li><a class="close-menu"><i class="far fa-times-circle"></i></a></li>
-      </ul>
-    </div>
-    <div class="wrapper" itemscope itemtype="http://schema.org/Place">
-      <article>
-        <h1 itemprop="description">Don't miss the Detail Center</h1>
-        <img itemprop="logo" class="logo-hero" src="build/assets/img/logofinalcarwash-white.png" alt="Pit Stop Hand Car Wash Logo">
-        <a href="es/index.html" class="language button">ES/EN</a>
-      </article>
-    </div>
-  </section>
+  <!-- navbar -->
+  <nav>
+    <ul class="main-nav" itemscope itemtype="http://schema.org/Place">
+      <li><a href="index.html" itemprop="name" class="logo">Pit <span>Stop</span> Orlando</a></li>
+      <li><a class="link" href="about.html">About Us</a></li>
+      <li><a class="link" href="services.html">Services &amp; Pricing</a></li>
+      <li><a class="link" href="services.html#discount">Offers</a></li>
+      <li><a class="link" href="faq.html">FAQ</a></li>
+      <li><a class="link download button" href="index.html#contact">Visit Us</a></li>
+      <li><a class="menu-bars"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <div class="overlay">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services &amp; Pricing</a></li>
+      <li><a href="services.html#discount">Offers</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="index.html#contact">Visit Us</a></li>
+      <li><a class="close-menu"><i class="far fa-times-circle"></i></a></li>
+    </ul>
+  </div>
 
-  <section id="contact">
-    <div class="wrapper">
-      <h2>Contact</h2>
+  <section id="faq" itemscope itemtype="http://schema.org/Thing">
+    <div class="wrapper top">
+      <h2>FAQ</h2>
 
-      <div class="grid">
-        <div class="cell" itemscope itemtype="http://schema.org/Place">
-          <h4>OUR ADDRESS</h4>
-          <p itemprop="address"><i class="fas fa-map-marker-alt"></i> 13003 Town Loop Blvd <br> Orlando, Fl 32837 </p>
-        </div>
-        <div class="cell" itemscope itemtype="http://schema.org/Organization">
-          <h4>Contact Info</h4>
-          <p itemprop="telephone">Tel: <a href="tel:4077572081">(407) 757-2081</a></p>
-          <p itemprop="email"><a href="mailto:pitstophandcarwash2015@gmail.com">pitstophandcarwash2015@gmail.com</a></p>
-          <p>
-            <a target="_blank" href="https://www.instagram.com/pitstoporlando/"><i class="fab fa-instagram"></i> @pitstoporlando</a>
-          </p>
-        </div>
-        <div class="cell" itemscope itemtype="http://schema.org/LocalBusiness">
-          <h4>OPENING HOURS</h4>
-          <p itemprop="openingHours">Mon - Sat: 8am - 7pm</p>
-          <p itemprop="openingHours">​Sunday: 9am - 5pm</p>
-        </div>
-      </div>
+      <h4>When do we open?</h4>
+      <p itemprop="description">Mon-Sat 8:00am
+      <br>Sunday 9:00am</p>
 
-      <div class="map" itemscope itemtype="http://schema.org/Place">
-        <iframe itemprop="hasMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.4439495459187!2d-81.42911088492318!3d28.375656182519858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd8734c6c43369%3A0x6bc710cc1599ce25!2sPit+Stop+Hand+Car+wash!5e0!3m2!1ses!2sus!4v1527352445229" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
+      <h4>When do we close?</h4>
+      <p itemprop="description">Mon-Sat 7:00pm
+      <br>Sunday 5:00pm</p>
 
-      <hr>
+      <h4>Is Pit Stop car wash safe for my car?</h4>
+      <p itemprop="description">We only use soft cloth materials that will not cause scratches or swirls. Pit Stop car wash only uses chemicals and processes that are safe for your vehicles’ finish and graphics.</p>
 
-      <form class="contact" action="https://formspree.io/pitstophandcarwash2015@gmail.com" method="POST">
-        <div class="wrapper">
-          <div class="group-1">
-            <div class="cell">
-              <input type="text" name="name" required placeholder="Name">
-            </div>
-            <div class="cell">
-              <input type="email" name="email" required placeholder="Email">
-            </div>
-          </div>
-          <div class="group-2">
-            <div class="cell message">
-              <textarea name="message" required rows="5" cols="" placeholder="Message"></textarea>
-            </div>
-          </div>
-        </div>
-        <button class="btn-send" type="submit" name="button">Submit</button>
-      </form>
+      <h4>Do you hand wash car and trucks?</h4>
+      <p itemprop="description">Yes. If you are not sure if you car will fit into the car wash tunnel, proceed to the hand wash area and ask a staff member to check the clearance for you (7.2).</p>
+
+      <h4>How long does an Express Hand Wash take?</h4>
+      <p itemprop="description">15 minutes</p>
+
+      <h4>How long does a Pro, Master Pro Hand Wash take?</h4>
+      <p itemprop="description">25-30 minutes, depending on how busy the full service area is, but not longer than 30 minutes.</p>
+
+      <h4>Can I leave my car for detailing?</h4>
+      <p itemprop="description">Yes</p>
+
+      <h4>Do you restore headlights and how long does it take?</h4>
+      <p itemprop="description">Yes we restore headlights. About 30-40 minutes, depending on how cloudy the lenses are.</p>
+
+      <p itemprop="description">If you have any questions please <a href="index.html#contact">contact us.</a></p>
+
+      <!-- <h4>Do you sell gift cards?</h4> -->
+      <!-- <p>Yes, they are available for purchase. Ask any manager.</p> -->
+
     </div>
   </section>
 

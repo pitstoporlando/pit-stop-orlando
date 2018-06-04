@@ -26,7 +26,6 @@ const styleSrc = 'source/sass/**/*.sass',
       scriptDest = 'build/assets/js/';
 
 
-
 // --------------------------------------------
 // Stand Alone Tasks
 // --------------------------------------------
@@ -73,7 +72,7 @@ gulp.task('watch', function(){
     // Serve files from the root of this project
     browserSync.init({
         server: {
-            baseDir: "./build"
+            baseDir: "./"
         },
         notify: false
     });
@@ -82,7 +81,7 @@ gulp.task('watch', function(){
     gulp.watch(scriptSrc,['scripts']);
     gulp.watch(vendorSrc,['vendors']);
     // gulp.watch('source/img/*',['images']);
-    gulp.watch(['build/*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js']).on('change', browserSync.reload);
+    gulp.watch(['./*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js']).on('change', browserSync.reload);
 
 });
 
