@@ -41,7 +41,6 @@ gulp.task('sass', function() {
             basename: 'main',
             suffix: '.min'
           }))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/assets/css'));
 });
 
