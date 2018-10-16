@@ -30,20 +30,20 @@
   <meta name="twitter:creator" content="@jesussandrea12">
   <meta name="twitter:title" content="Pit Stop Orlando - Hand Car Wash | Don't miss the Detail Center">
   <meta name="twitter:description" content="Pit Stop Orlando - Hand Car Wash | Don't miss the Detail Center">
-  <meta name="twitter:image:src" content="https://pitstoporlando.com/dist/images/share.png">
+  <meta name="twitter:image:src" content="https://pitstoporlando.com/build/assets/img/social.jpg">
 
   <!-- Facebook meta -->
   <meta property="og:title" content="Pit Stop Orlando - Hand Car Wash | Don't miss the Detail Center">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pitstoporlando.com/">
-  <meta property="og:image" content="https://pitstoporlando.com/dist/images/share.png">
+  <meta property="og:image" content="https://pitstoporlando.com/build/assets/img/social.jpg">
   <meta property="og:description" content="Pit Stop Orlando - Hand Car Wash | Don't miss the Detail Center">
   <meta property="og:site_name" content="Pit Stop Orlando">
 
   <!-- GOOGLE + Share -->
   <meta itemprop="name" content="Pit Stop Orlando - Hand Car Wash | Don't miss the Detail Center">
   <meta itemprop="description" content="Pit Stop Orlando - Hand Car Wash | Don't miss the Detail Center">
-  <meta itemprop="image" content="build/assets/images/share.png">
+  <meta itemprop="image" content="https://pitstoporlando.com/build/assets/img/social.jpg">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="build/assets/img/favicons/apple-touch-icon-57x57.png" />
@@ -162,6 +162,28 @@
     </div>
   </section>
 
+  <!-- Modal -->
+  <div class="modale">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>Please Login</h2>
+        <a href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+      </div>
+      <div class="modal-body">
+        <input type="text" name="u" placeholder="User" size="20" /><br>
+        <input type="text" name="p" placeholder="&bull;&bull;&bull;&bull;" size="20" /></div>
+      <div class="modal-footer">
+  
+  
+        <a href="#" class="btn" id="btn_ingresar">Login</a>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal -->
+  
+  <h1>Dead Simple Modal</h1>
+  <p><a href="#" class="btn btn-big openmodale">Open Login Box</a></p>
+
   <link rel="stylesheet" href="build/assets/css/main.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -175,6 +197,23 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-98338129-4');
+  </script>
+  <script>
+
+    const $openmodal = document.querySelector('.openmodale')
+    $openmodal.addEventListener('click', function(e) {
+      e.preventDefault();
+      const $modal = document.querySelector('.modale')
+      $modal.classList.add('opened')
+    })
+
+    const $closemodal = document.querySelector('.closemodale')
+    $closemodal.addEventListener('click', function (e) {
+      e.preventDefault();
+      const $modal = document.querySelector('.modale')
+      $modal.classList.remove('opened')
+    })
+
   </script>
 </body>
 </html>
