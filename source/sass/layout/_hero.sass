@@ -43,8 +43,8 @@
 
 // modal
 .btn
-  background: #428bca
-  border: #357ebd solid 0px
+  background: $red-brand
+  border: $red-secondary solid 0px
   border-radius: 3px
   color: #fff
   display: inline-block
@@ -56,7 +56,7 @@
   position: relative
   transition: color .1s ease
   &:hover
-    background: #357ebd
+    background: $red-secondary
   &.btn-big
     font-size: 18px
     padding: 15px 20px
@@ -73,61 +73,74 @@
   &:hover
     color: #919191
 
-.modale:before
-  content: ""
-  display: none
-  background: rgba(0, 0, 0, 0.6)
-  position: fixed
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  z-index: 10
-
-.opened
-  &:before
-    display: block
-  .modal-dialog
-    -webkit-transform: translate(0, 0)
-    -ms-transform: translate(0, 0)
-    transform: translate(0, 0)
-    top: 20%
-
-.modal-dialog
-  background: #fefefe
-  border: #333333 solid 0px
-  border-radius: 5px
-  margin-left: -200px
-  text-align: center
-  position: fixed
-  left: 50%
-  top: -100%
-  z-index: 11
-  width: 360px
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
-  -webkit-transform: translate(0, -500%)
-  -ms-transform: translate(0, -500%)
-  transform: translate(0, -500%)
-  -webkit-transition: -webkit-transform 1s ease-out
-  -moz-transition: -moz-transform .8s ease-out
-  -o-transition: -o-transform .8s ease-out
-  transition: transform .8s ease-out
-
 .modal-body
   padding: 20px
-  input
-    width: 200px
-    padding: 8px
-    border: 1px solid #ddd
-    color: #888
-    outline: 0
-    font-size: 14px
-    font-weight: bold
-
-.modal-header, .modal-footer
-  padding: 10px 20px
 
 .modal-header
   border-bottom: #eeeeee solid 1px
   h2
     font-size: 20px
+
+
+.contenedor
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0
+  font-family: Arial
+  flex-direction: column
+
+.overlay
+  background: rgba(0, 0, 0, 0.5)
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: 1.1s ease-in
+  opacity: 0
+  visibility: hidden
+  &.active
+    opacity: 1
+    visibility: visible
+
+.modal
+  margin: 1em;
+  width: 500px;
+  height: 400px;
+  background: white
+  // animation: name time estado;
+  animation: modalIn .8s forwards
+  padding: 1em
+  border-radius: .5em
+  text-align: center
+
+@keyframes modalIn
+  0%
+    transform: translateY(-3000px)
+
+  60%
+    transform: translateY(25px)
+
+  75%
+    transform: translateY(-10px)
+
+  90%
+    transform: translateY(5px)
+
+
+@keyframes modalOut
+  0%
+    transform: translateY(5px)
+
+  60%
+    transform: translateY(-10px)
+
+  75%
+    transform: translateY(25px)
+
+  100%
+    transform: translateY(-3000px)

@@ -163,26 +163,27 @@
   </section>
 
   <!-- Modal -->
-  <div class="modale">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <h2>Please Login</h2>
-        <a href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+  <div class="contenedor">
+    <div class="overlay active" id="overlay">
+
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <h2>Notice</h2>
+        </div>
+        <div class="modal-body">
+          <p>Nos estamos mudando a otro lugar <br>We are moving to another location</p>
+          <h4>2924 Camomile Dr. <br> Orlando, Fl 32837</h4>
+          <div class="modal-footer">
+          </div>
+        </div>
+        <div class="modal-buttons">
+          <a href="#" class="btn closemodale" id="hide-modal">Understood / Entendido</a>
+        </div>
       </div>
-      <div class="modal-body">
-        <input type="text" name="u" placeholder="User" size="20" /><br>
-        <input type="text" name="p" placeholder="&bull;&bull;&bull;&bull;" size="20" /></div>
-      <div class="modal-footer">
-  
-  
-        <a href="#" class="btn" id="btn_ingresar">Login</a>
-      </div>
+
     </div>
   </div>
   <!-- /Modal -->
-  
-  <h1>Dead Simple Modal</h1>
-  <p><a href="#" class="btn btn-big openmodale">Open Login Box</a></p>
 
   <link rel="stylesheet" href="build/assets/css/main.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -199,21 +200,14 @@
     gtag('config', 'UA-98338129-4');
   </script>
   <script>
+    const $hideButton = document.getElementById('hide-modal');
+    const $modal = document.getElementById('modal');
+    const $overlay = document.getElementById('overlay');
 
-    const $openmodal = document.querySelector('.openmodale')
-    $openmodal.addEventListener('click', function(e) {
-      e.preventDefault();
-      const $modal = document.querySelector('.modale')
-      $modal.classList.add('opened')
-    })
-
-    const $closemodal = document.querySelector('.closemodale')
-    $closemodal.addEventListener('click', function (e) {
-      e.preventDefault();
-      const $modal = document.querySelector('.modale')
-      $modal.classList.remove('opened')
-    })
-
+    $hideButton.addEventListener('click', (event) => {
+      $modal.style.animation = 'modalOut .8s forwards';
+      $overlay.classList.remove('active');
+    });
   </script>
 </body>
 </html>
